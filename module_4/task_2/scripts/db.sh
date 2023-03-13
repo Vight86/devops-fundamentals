@@ -38,7 +38,6 @@ if [ $1 = 'restore' ];
   then
     if [[ $( find ../data/*-users.db.backup ) ]];
       then
-        #backup=$( find ../data/*-users.db.backup )
         cat ../data/*-users.db.backup > ../data/users.db
         echo Backup restored
       else
